@@ -1,0 +1,6 @@
+Q-11
+ANS:-
+
+-->The reduce() method is used to iterate through each element of the numbers array. For each number in the array, the code checks if it's even (divisible by 2). If it's even, the number is pushed to the evens array in the accumulator. Otherwise, it's pushed to the odds array.
+
+-->After the reduce() operation completes, the result variable will hold an object with two properties: evens and odds. The evens property contains all the even numbers from the numbers array, and the odds property contains all the odd numbers.
