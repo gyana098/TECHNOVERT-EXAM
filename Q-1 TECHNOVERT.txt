@@ -1,0 +1,14 @@
+
+Local Storage:-
+1.It allows 10MB of data to be stored.
+2.The stored data is not deleted when the browser is closed.
+3.ocal storage is useful for storing data that the user will need to access later, such as offline data.
+Session Storage:-
+1.It allows 5MB of data to be stored.
+2.The data is stored only for the session and will be deleted when the browser is closed.
+3.Session storage is a great way to improve the performance of your web applications.
+Cookies:-
+1.The storage capacity is limited to 4KB of data.
+2.The data can be set to expire at a certain time.
+3.Cookies are a good choice for storing data that should not be persisted for a long time, such as session IDs.		
+		
