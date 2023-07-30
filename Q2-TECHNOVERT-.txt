@@ -1,0 +1,22 @@
+Q2-Explain the output of the above-given code and explain why?
+
+for (var i = 0; i < 5; i++) {
+
+  setTimeout(() => console.log(i), 100)
+
+}
+ANS:-
+The code is a loop that iterates from 0 to 4 (i < 5) using the variable i. Inside the loop, there is a setTimeout function that schedules the execution of an arrow function after a delay of 100 milliseconds (100).
+
+INeach iteration:
+Iteration 1: i is 0, but the console.log(i) is scheduled to execute after a delay of 100 milliseconds.
+Iteration 2: i is 1, but again, the console.log(i) is scheduled to execute after a delay of 100 milliseconds.
+Iteration 3: i is 2, same as before, console.log(i) is scheduled to execute after a delay of 100 milliseconds.
+Iteration 4: i is 3, and once again, console.log(i) is scheduled to execute after a delay of 100 milliseconds.
+Iteration 5: i is 4, and the console.log(i) is scheduled to execute after a delay of 100 milliseconds.
+
+As a result, all the console.log(i) statements print the value 5. This happens because the setTimeout functions execute asynchronously, after the loop has finished running, and they all access the same global variable i, which holds the value 5.
+
+
+
+
