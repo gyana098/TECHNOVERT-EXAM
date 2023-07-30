@@ -1,0 +1,15 @@
+Q-8
+ANS:-
+The numbers 1, 4, 3, and 2 will be logged to the console in the following order:
+
+1: The first line inside the immediately-invoked function expression (IIFE) logs the number 1 to the console.
+
+4: The second line inside the IIFE logs the number 4 to the console.
+
+3: The first setTimeout with a delay of 0 milliseconds is scheduled to execute immediately. However, even though the delay is 0, it will be pushed to the end of the message queue by the event loop. The event loop will process pending tasks after the current task (IIFE) completes. So, the number 3 will be logged after the current synchronous tasks finish.
+
+2: The second setTimeout with a delay of 1000 milliseconds is scheduled to execute after a delay of 1 second. As the event loop continues, and after at least 1 second passes since the initial execution of the IIFE, the number 2 will be logged to the console.
+
+The log order will be: 1, 4, 3, and finally, after a delay of 1 second, 2.
+
+Even though the delay for the second setTimeout is 0, it doesn't mean it will execute immediately. It merely means that it will be scheduled to execute as soon as possible, but it will still be added to the event queue after the current synchronous tasks are completed. This behavior allows the event loop to maintain a non-blocking execution model.
