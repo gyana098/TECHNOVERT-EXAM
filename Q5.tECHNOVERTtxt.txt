@@ -1,0 +1,14 @@
+Q5. What are Higher-Order Components (HOC) in React and how do they work?
+ANS:-
+Higher-Order Components (HOC) are an advanced and powerful pattern in React that allows for component composition and code reuse. An HOC is a function that takes a component as input and returns a new component with additional props or behavior. It doesn't modify the original component but enhances it with extra functionality.
+
+EXAMPLE:-
+
+function higherOrderComponent(WrappedComponent) {
+  return class EnhancedComponent extends React.Component {
+    // Additional logic and behavior can be added here
+    render() {
+      return <WrappedComponent {...this.props} />;
+    }
+  };
+}
