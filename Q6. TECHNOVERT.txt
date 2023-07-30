@@ -1,0 +1,11 @@
+Q6. What is callback hell? Explain different ways to solve callback hell with examples each?
+ANS:-
+In JavaScript, everything (strings, arrays, functions) is considered an object. Hence, the concept of callbacks lets us pass functions as arguments to another function which will be executed later within the outer function.
+1.Using Promises:-
+Promises provide a more structured and organized way to handle asynchronous operations. Instead of nesting callbacks, you can chain promises using .then() and handle errors with .catch().
+2.Using Async/Await:-
+Async/await is a more elegant and readable way to handle asynchronous operations using Promises. It allows you to write asynchronous code that looks similar to synchronous code.
+3.Using Named Functions:-
+Breaking down the nested functions into named functions can improve code readability and maintainability.
+4.Using Libraries:-
+Several libraries like async.js and q.js offer control flow utilities that help manage asynchronous code without falling into callback hell. These libraries provide methods like async.waterfall, async.series, and async.parallel.
