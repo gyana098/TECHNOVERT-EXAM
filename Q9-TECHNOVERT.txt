@@ -1,0 +1,15 @@
+Q9-
+ANS:-
+arr1 is initialized by splitting the string "john" into individual characters, resulting in the array ['j', 'o', 'h', 'n'].
+
+arr2 is assigned the value of arr1.reverse(). The reverse() method modifies the original array in place and also returns a reference to the same reversed array. So, arr2 now points to the same array as arr1, which is ['n', 'h', 'o', 'j'].
+
+arr3 is initialized by splitting the string "jones" into individual characters, resulting in the array ['j', 'o', 'n', 'e', 's'].
+
+arr2.push(arr3) adds the array arr3 as an element to the end of arr2, modifying it to ['n', 'h', 'o', 'j', ['j', 'o', 'n', 'e', 's']].
+
+The first console.log statement outputs the length of arr1 (5) and the last element of arr1 using arr1.slice(-1). As arr1 was reversed and modified, the last element is an array ['j', 'o', 'n', 'e', 's'].
+
+The second console.log statement outputs the length of arr2 (5) and the last element of arr2 using arr2.slice(-1). As arr2 was modified, the last element is also an array ['j', 'o', 'n', 'e', 's'].
+
+It's essential to be cautious with the reverse() method as it modifies the original array in place and can lead to unexpected results when used in combination with other operations. If you want to create a reversed copy of an array without modifying the original, you should make a copy of the array first and then use the reverse() method on the copy.
