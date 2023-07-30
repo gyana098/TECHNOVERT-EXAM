@@ -1,0 +1,10 @@
+Q10-
+ANS:-
+
+1.console.log(1);: This line executes synchronously and logs 1 to the console.
+2.setTimeout(printNumber, 0, 2);: This schedules the printNumber function to be executed with num equal to 2 after a delay of 0 milliseconds. Although the delay is set to 0, it doesn't mean that the function will execute immediately. It will be added to the event queue and executed after the current synchronous code is done. Since the delay is 0, it is placed in the event queue with higher priority than the setTimeout(printNumber, 100, 3); statement.
+3.setTimeout(printNumber, 100, 3);: This schedules the printNumber function to be executed with num equal to 3 after a delay of 100 milliseconds. This means it will be added to the event queue after the setTimeout(printNumber, 0, 2); statement.
+4.console.log(4);: This line executes synchronously and logs 4 to the console.
+
+
+
